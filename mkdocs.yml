@@ -1,6 +1,65 @@
-docs_dir: docs
 site_name: Docs as Code Project
+docs_dir: docs
+
 nav:
   - HomePage Test: index.md
   - Glossary: glossary.md
   - Test Page: testpage.md
+
+  - Overview:
+      - FAQ: FAQ.md
+      - Glossary: Glossary.md
+      - Guideline to Documentation Changes: Guideline-to-documentation-changes.md
+
+  - CreateApplicationProcess:
+      - SendApplication:
+          - General: CreateApplicationProcess/SendApplication-General.md
+          - Use Cases: CreateApplicationProcess/SendApplication-UseCases.md
+          - Schemas: CreateApplicationProcess/SendApplication-Schemas.md
+          - Data Model: CreateApplicationProcess/SendApplication-DataModel.md
+
+      - ApplicationEntityCreation:
+          - General: CreateApplicationProcess/ApplicationEntityCreation-General.md
+          - Use Cases: CreateApplicationProcess/ApplicationEntityCreation-UseCases.md
+          - Schemas: CreateApplicationProcess/ApplicationEntityCreation-Schemas.md
+          - Data Model: CreateApplicationProcess/ApplicationEntityCreation-DataModel.md
+
+  - Risk-CheckProcess:
+  - DecisionProcess:
+      - SendingStatus:
+          - General: DecisionProcess/SendingStatus-General.md
+          - Use Cases: DecisionProcess/SendingStatus-UseCases.md
+          - Schemas: DecisionProcess/SendingStatus-Schemas.md
+          - Data Model: DecisionProcess/SendingStatus-DataModel.md
+
+      - ReceivingADecision:
+          - General: DecisionProcess/ReceivingADecision-General.md
+          - Use Cases: DecisionProcess/ReceivingADecision-UseCases.md
+          - Schemas: DecisionProcess/ReceivingADecision-Schemas.md
+          - Data Model: DecisionProcess/ReceivingADecision-DataModel.md
+
+      - DecisionToCreditFactory:
+          - General: DecisionProcess/DecisionToCreditFactory-General.md
+          - Use Cases: DecisionProcess/DecisionToCreditFactory-UseCases.md
+          - Schemas: DecisionProcess/DecisionToCreditFactory-Schemas.md
+          - Data Model: DecisionProcess/DecisionToCreditFactory-DataModel.md
+
+  - After-DecisionProcess:
+      - CreditFactoryChecks:
+          - General: After-DecisionProcess/CreditFactoryChecks-General.md
+          - Use Cases: After-DecisionProcess/CreditFactoryChecks-UseCases.md
+          - Schemas: After-DecisionProcess/CreditFactoryChecks-Schemas.md
+          - Data Model: After-DecisionProcess/CreditFactoryChecks-DataModel.md
+
+      - Funded:
+          - General: After-DecisionProcess/Funded-General.md
+          - Use Cases: After-DecisionProcess/Funded-UseCases.md
+          - Schemas: After-DecisionProcess/Funded-Schemas.md
+          - Data Model: After-DecisionProcess/Funded-DataModel.md
+
+  - OpenAPI:
+      - Services: OpenAPI/Services.md
+      - ApplicationCreation: OpenAPI/ApplicationCreation.md
+      - StatusSend: OpenAPI/StatusSend.md
+      - ClientDecision: OpenAPI/ClientDecision.md
+      - Risk: OpenAPI/Risk.md
