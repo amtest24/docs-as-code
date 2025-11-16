@@ -1,4 +1,6 @@
 docs_dir: docs
 site_name: Docs as Code Project
 nav:
-  - HomePage Test: testpage.md
+  - HomePage Test: index.md
+  - Glossary: glossary.md
+  - Test Page: testpage.md
