@@ -1,0 +1,2 @@
+# AutoCredits Documentation
+Welcoming page.
