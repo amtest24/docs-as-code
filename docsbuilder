@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 WORKDIR /docs-as-code
 COPY . /docs-as-code
-RUN chown -R root:root /docs-as-code && chmod -R a+rX /docs-as-code
+RUN chmod -R a+rX /docs-as-code/docs
 RUN pip install mkdocs
 CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
