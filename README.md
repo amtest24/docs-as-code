@@ -1,1 +1,1 @@
-# docs as code
+# AutoCredits Documentation
