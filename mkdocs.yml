@@ -1,3 +1,3 @@
 site_name: Docs as Code Project
 nav:
-  - HomePage Test: testpage.md
+  - HomePage Test: /docs-as-code/docs/testpage.md
