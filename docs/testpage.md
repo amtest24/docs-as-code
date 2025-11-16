@@ -16,7 +16,7 @@
 - Business requirements
 - Algorithms/Use Cases
 #### 1.2.1 Subprocess Flow
-- Business Requirements
+
 - Algorithms/Use Cases
 ### 1.3 Data Model
 - Logical Data Models
