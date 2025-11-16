@@ -48,7 +48,7 @@
 - Business Rules
 - Edge Cases
 
-## 7. Security & Authentication
+## 7. Security & Authenticationgit
 - Auth Mechanisms
 - Data Protection
 
