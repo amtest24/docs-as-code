@@ -20,7 +20,7 @@
 ## 3. Process Flow
 - BPMN Process Schema (visual/detailed)
 - Application Lifecycle Stages
-- State Transitions
+- State Transitions Model
 
 ## 4. Data Model
 - ERD (Entity Relationship Diagram)
