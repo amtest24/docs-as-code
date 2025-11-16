@@ -1,0 +1,3 @@
+site_name: Docs as Code Project
+nav:
+  - Home: docs/testpage.md
