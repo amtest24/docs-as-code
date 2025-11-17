@@ -12,7 +12,7 @@ RUN pip install \
     mkdocs==1.5.3 \
     mkdocs-material==9.5.13 \
     mkdocs-swagger-ui-tag==0.6.0 \
-    git+https://github.com/kazhala/mkdocs-openapi-plugin.git \
     pyyaml
+
 
 CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
