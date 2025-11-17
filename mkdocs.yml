@@ -25,6 +25,8 @@ nav:
           - Data Model: CreateApplicationProcess/ApplicationEntityCreation-DataModel.md
 
   - Risk-CheckProcess:
+      - Stages DM1–DM7: Risk-CheckProcess/Stages-DM1-DM7.md
+
   - DecisionProcess:
       - SendingStatus:
           - General: DecisionProcess/SendingStatus-General.md
@@ -39,27 +41,4 @@ nav:
           - Data Model: DecisionProcess/ReceivingADecision-DataModel.md
 
       - DecisionToCreditFactory:
-          - General: DecisionProcess/DecisionToCreditFactory-General.md
-          - Use Cases: DecisionProcess/DecisionToCreditFactory-UseCases.md
-          - Schemas: DecisionProcess/DecisionToCreditFactory-Schemas.md
-          - Data Model: DecisionProcess/DecisionToCreditFactory-DataModel.md
-
-  - After-DecisionProcess:
-      - CreditFactoryChecks:
-          - General: After-DecisionProcess/CreditFactoryChecks-General.md
-          - Use Cases: After-DecisionProcess/CreditFactoryChecks-UseCases.md
-          - Schemas: After-DecisionProcess/CreditFactoryChecks-Schemas.md
-          - Data Model: After-DecisionProcess/CreditFactoryChecks-DataModel.md
-
-      - Funded:
-          - General: After-DecisionProcess/Funded-General.md
-          - Use Cases: After-DecisionProcess/Funded-UseCases.md
-          - Schemas: After-DecisionProcess/Funded-Schemas.md
-          - Data Model: After-DecisionProcess/Funded-DataModel.md
-
-  - OpenAPI:
-      - Services: OpenAPI/Services.md
-      - ApplicationCreation: OpenAPI/ApplicationCreation.md
-      - StatusSend: OpenAPI/StatusSend.md
-      - ClientDecision: OpenAPI/ClientDecision.md
-      - Risk: OpenAPI/Risk.md
+          - General: DecisionProcess/DecisionToCreditF
