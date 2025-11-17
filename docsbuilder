@@ -2,6 +2,7 @@ FROM python:3.9-slim
 
 WORKDIR /docs-as-code
 
+# system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libyaml-dev \
@@ -11,11 +12,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY . /docs-as-code
 
 RUN pip install --upgrade pip
+
 RUN pip install \
-    mkdocs \
-    mkdocs-material \
-    mkdocs-swagger-ui-tag \
-    mkdocs-openapi-plugin \
+    mkdocs==1.5.3 \
+    mkdocs-material==9.5.13 \
+    mkdocs-swagger-ui-tag==0.6.0 \
+    mkdocs-openapi-plugin==0.1.6 \
     pyyaml
 
 EXPOSE 8000
