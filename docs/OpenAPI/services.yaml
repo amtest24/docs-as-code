@@ -1,0 +1,146 @@
+openapi: 3.0.3
+
+info:
+  title: Pre-DM1 External Services API
+  version: "1.0.0"
+  description: >
+    API-контракты всех внешних сервисов, вызываемых до этапа DM1.
+    Структура включает интеграции через шину и прямые вызовы.
+
+servers:
+  - url: https://example.com
+    description: Base API Gateway or Integration Bus
+
+tags:
+  - name: GKB
+    description: Государственная кредитная база (кредитная история)
+
+paths:
+
+  /gkb/credit_history/create:
+    post:
+      tags:
+        - GKB
+      summary: Create credit history record
+      operationId: gkbCreateCreditHistory
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GkbCreateRequest'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GkbCreateResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+
+components:
+  schemas:
+
+    GkbHeader:
+      type: object
+      properties:
+        operUid:
+          type: string
+        platform:
+          type: string
+        receiverSystem:
+          type: string
+        rqTm:
+          type: string
+          format: date-time
+        rqUid:
+          type: string
+        rsTm:
+          type: string
+        rsUid:
+          type: string
+        service:
+          type: string
+        sourceSystem:
+          type: string
+      required:
+        - operUid
+        - platform
+        - receiverSystem
+        - rqTm
+        - rqUid
+        - service
+        - sourceSystem
+
+    GkbApplicationItem:
+      type: object
+      properties:
+        creditorApplicationId:
+          type: integer
+        iin:
+          type: string
+        loanObject:
+          type: integer
+        loanPurpose:
+          type: integer
+        sum:
+          type: number
+      required:
+        - creditorApplicationId
+        - iin
+        - loanObject
+        - loanPurpose
+        - sum
+
+    GkbCreateRequest:
+      type: object
+      properties:
+        header:
+          $ref: '#/components/schemas/GkbHeader'
+        rqParms:
+          type: object
+          properties:
+            applications:
+              type: array
+              items:
+                $ref: '#/components/schemas/GkbApplicationItem'
+          required:
+            - applications
+      required:
+        - header
+        - rqParms
+
+    GkbCreateResponse:
+      type: object
+      properties:
+        header:
+          $ref: '#/components/schemas/GkbHeader'
+        rsParms:
+          type: object
+          properties:
+            code:
+              type: integer
+            message:
+              type: string
+          required:
+            - code
+            - message
+      required:
+        - header
+        - rsParms
+
+    BadRequestError:
+      type: object
+      properties:
+        ErrorCode:
+          type: string
+        ErrorDesc:
+          type: string
+      required:
+        - ErrorCode
+        - ErrorDesc
