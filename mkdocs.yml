@@ -2,7 +2,7 @@ site_name: Docs as Code Project
 docs_dir: docs
 plugins:
   - search
-  - swagger-ui-tag  # <- this enables the ::: swagger-ui tag
+  - swagger-ui-tag  # <- this enables the ::: swagger-ui tag1
 nav:
   - HomePage Test: index.md
   - Glossary: glossary.md
