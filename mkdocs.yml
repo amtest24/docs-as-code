@@ -26,6 +26,7 @@ nav:
 
   - Risk-CheckProcess:
       - Stages DM1–DM7: Risk-CheckProcess/Stages-DM1-DM7.md
+      - OpenAPIServiсes: Services.md
 
   - DecisionProcess:
       - SendingStatus:
@@ -42,4 +43,3 @@ nav:
 
       - DecisionToCreditFactory:
           - General: DecisionProcess/DecisionToCreditF
-          - OpenAPIServies: Services.md
