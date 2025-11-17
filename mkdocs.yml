@@ -26,7 +26,8 @@ nav:
 
   - Risk-CheckProcess:
       - Stages DM1–DM7: Risk-CheckProcess/Stages-DM1-DM7.md
-      - OpenAPIServiсes: OpenAPI/Services.md
+      - OpenAPIServices: OpenAPI/Services.md
+
 
   - DecisionProcess:
       - SendingStatus:
