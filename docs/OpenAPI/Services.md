@@ -1,5 +1,6 @@
 # Services API
 
 ::: swagger-ui
-src: OpenAPI/services.yaml
+src: openapi/services.yaml
 height: 600
+:::
