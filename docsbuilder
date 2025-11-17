@@ -2,9 +2,12 @@ FROM python:3.10-slim
 WORKDIR /docs-as-code
 COPY . /docs-as-code
 
+# Install git and any build dependencies
+RUN apt-get update && apt-get install -y git build-essential && rm -rf /var/lib/apt/lists/*
+
 RUN pip install --upgrade pip
 
-# Install MkDocs + Material + Swagger UI plugin + PyYAML
+# Install MkDocs + Material + Swagger UI plugin + mkdocs-openapi-plugin + PyYAML
 RUN pip install \
     mkdocs==1.5.3 \
     mkdocs-material==9.5.13 \
