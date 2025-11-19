@@ -9,9 +9,9 @@ RUN pip install --upgrade pip
 
 # Install MkDocs + Material + Swagger UI plugin + mkdocs-openapi-plugin + PyYAML
 RUN pip install \
-    mkdocs==1.5.3 \
+    mkdocs==1.6.0 \
     mkdocs-material==9.5.13 \
-    mkdocs-swagger-ui-tag==0.5.0 \
+    mkdocs-swagger-ui-tag==0.6.0 \
     pyyaml
 
 

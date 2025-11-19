@@ -2,7 +2,13 @@ site_name: Docs as Code Project
 docs_dir: docs
 plugins:
   - search
-  - swagger-ui-tag  # <- this enables the ::: swagger-ui tag1
+  - swagger-ui-tag
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
 nav:
   - HomePage Test: index.md
   - Glossary: glossary.md
