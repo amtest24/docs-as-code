@@ -8,10 +8,9 @@ RUN apt-get update && apt-get install -y git build-essential && rm -rf /var/lib/
 RUN pip install --upgrade pip
 
 # Install MkDocs + Material + Swagger UI plugin + mkdocs-openapi-plugin + PyYAML
-RUN pip install
-    mkdocs==1.5.3
-    mkdocs-material==9.5.13
-    mkdocs-swagger-ui-tag==0.6.0
+RUN pip install \
+    mkdocs==1.5.3 \
+    mkdocs-material==9.5.13 \
+    mkdocs-swagger-ui-tag==0.6.0 \
     pyyaml
-
 CMD ["mkdocs", "serve", "-a", "0.0.0.0:8000"]
