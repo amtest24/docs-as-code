@@ -28,30 +28,7 @@
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
 <li class="navitem active">
-<a class="nav-link" href=".">HomePage Test</a>
-</li>
-<li class="navitem">
-<a class="nav-link" href="glossary/">Glossary</a>
-</li>
-<li class="navitem">
-<a class="nav-link" href="testpage/">Test Page</a>
-</li>
-<li class="dropdown">
-<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">OpenAPI <b class="caret"></b></a>
-<ul class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="OpenAPI/Overview.md">Overview</a>
-</li>
-<li>
-<a class="dropdown-item" href="OpenAPI/Services/">Services</a>
-</li>
-<li>
-<a class="dropdown-item" href="OpenAPI/Schemas.md">Schemas</a>
-</li>
-<li>
-<a class="dropdown-item" href="OpenAPI/DataModel.md">Data Model</a>
-</li>
-</ul>
+<a class="nav-link" href=".">Home</a>
 </li>
 <li class="dropdown">
 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Overview <b class="caret"></b></a>
@@ -60,7 +37,7 @@
 <a class="dropdown-item" href="FAQ/">FAQ</a>
 </li>
 <li>
-<a class="dropdown-item" href="Glossary/">Glossary</a>
+<a class="dropdown-item" href="glossary/">Glossary</a>
 </li>
 <li>
 <a class="dropdown-item" href="Guideline-to-documentation-changes/">Guideline to Documentation Changes</a>
@@ -70,11 +47,37 @@
 </li>
 </ul>
 </li>
+<li class="navitem">
+<a class="nav-link" href="testpage/">Test Page</a>
+</li>
 <li class="dropdown">
-<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">CreateApplicationProcess <b class="caret"></b></a>
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">OpenAPI <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="OpenAPI/Services/">Services</a>
+</li>
+<li>
+<a class="dropdown-item" href="OpenAPI/ApplicationCreation/">Application Creation</a>
+</li>
+<li>
+<a class="dropdown-item" href="OpenAPI/ClientDecision/">Client Decision</a>
+</li>
+<li>
+<a class="dropdown-item" href="OpenAPI/Risk/">Risk</a>
+</li>
+<li>
+<a class="dropdown-item" href="OpenAPI/StatusSend/">Status Send</a>
+</li>
+<li>
+<a class="dropdown-item" href="OpenAPI/testswagger/">Swagger Test</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Create Application Process <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li class="dropdown-submenu">
-<a class="dropdown-item" href="#">SendApplication</a>
+<a class="dropdown-item" href="#">Send Application</a>
 <ul class="dropdown-menu">
 <li>
 <a class="dropdown-item" href="CreateApplicationProcess/SendApplication-General/">General</a>
@@ -91,7 +94,7 @@
 </ul>
 </li>
 <li class="dropdown-submenu">
-<a class="dropdown-item" href="#">ApplicationEntityCreation</a>
+<a class="dropdown-item" href="#">Application Entity Creation</a>
 <ul class="dropdown-menu">
 <li>
 <a class="dropdown-item" href="CreateApplicationProcess/ApplicationEntityCreation-General/">General</a>
@@ -110,21 +113,32 @@
 </ul>
 </li>
 <li class="dropdown">
-<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Risk-CheckProcess <b class="caret"></b></a>
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Risk Check Process <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a class="dropdown-item" href="#">DM1</a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" href="Risk-CheckProcess/DM1/DM1-General/">Stage DM1</a>
+<a class="dropdown-item" href="Risk-CheckProcess/DM1/DM1-General/">General</a>
 </li>
 <li>
-<a class="dropdown-item" href="OpenAPI/Services/">OpenAPIServices</a>
+<a class="dropdown-item" href="Risk-CheckProcess/DM1/DM1-UseCases/">Use Cases</a>
+</li>
+<li>
+<a class="dropdown-item" href="Risk-CheckProcess/DM1/DM1-Schemas/">Schemas</a>
+</li>
+<li>
+<a class="dropdown-item" href="Risk-CheckProcess/DM1/DM1-DataModel/">Data Model</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li class="dropdown">
-<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">DecisionProcess <b class="caret"></b></a>
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Decision Process <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li class="dropdown-submenu">
-<a class="dropdown-item" href="#">SendingStatus</a>
+<a class="dropdown-item" href="#">Sending Status</a>
 <ul class="dropdown-menu">
 <li>
 <a class="dropdown-item" href="DecisionProcess/SendingStatus-General/">General</a>
@@ -141,7 +155,7 @@
 </ul>
 </li>
 <li class="dropdown-submenu">
-<a class="dropdown-item" href="#">ReceivingADecision</a>
+<a class="dropdown-item" href="#">Receiving a Decision</a>
 <ul class="dropdown-menu">
 <li>
 <a class="dropdown-item" href="DecisionProcess/ReceivingADecision-General/">General</a>
@@ -158,10 +172,58 @@
 </ul>
 </li>
 <li class="dropdown-submenu">
-<a class="dropdown-item" href="#">DecisionToCreditFactory</a>
+<a class="dropdown-item" href="#">Decision to Credit Factory</a>
 <ul class="dropdown-menu">
 <li>
-<a class="dropdown-item" href="DecisionProcess/DecisionToCreditF">General</a>
+<a class="dropdown-item" href="DecisionProcess/DecisionToCreditFactory-General/">General</a>
+</li>
+<li>
+<a class="dropdown-item" href="DecisionProcess/DecisionToCreditFactory-UseCases/">Use Cases</a>
+</li>
+<li>
+<a class="dropdown-item" href="DecisionProcess/DecisionToCreditFactory-Schemas/">Schemas</a>
+</li>
+<li>
+<a class="dropdown-item" href="DecisionProcess/DecisionToCreditFactory-DataModel/">Data Model</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">After Decision Process <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a class="dropdown-item" href="#">Credit Factory Checks</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/CreditFactoryChecks-General/">General</a>
+</li>
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/CreditFactoryChecks-UseCases/">Use Cases</a>
+</li>
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/CreditFactoryChecks-Schemas/">Schemas</a>
+</li>
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/CreditFactoryChecks-DataModel/">Data Model</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a class="dropdown-item" href="#">Funded</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/Funded-General/">General</a>
+</li>
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/Funded-UseCases/">Use Cases</a>
+</li>
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/Funded-Schemas/">Schemas</a>
+</li>
+<li>
+<a class="dropdown-item" href="After-DecisionProcess/Funded-DataModel/">Data Model</a>
 </li>
 </ul>
 </li>
@@ -180,7 +242,7 @@
                                 </a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="glossary/" rel="next">
+<a class="nav-link" href="FAQ/" rel="next">
                                     Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -323,5 +385,5 @@
 </html>
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2026-07-16 18:24:32.517040+00:00
+Build Date UTC : 2026-07-16 19:02:05.803719+00:00
 -->
