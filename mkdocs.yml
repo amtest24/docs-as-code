@@ -13,11 +13,16 @@ nav:
   - HomePage Test: index.md
   - Glossary: glossary.md
   - Test Page: testpage.md
-
+  - OpenAPI:
+      - Overview: OpenAPI/Overview.md
+      - Services: OpenAPI/Services.md
+      - Schemas: OpenAPI/Schemas.md
+      - Data Model: OpenAPI/DataModel.md
   - Overview:
       - FAQ: FAQ.md
       - Glossary: Glossary.md
       - Guideline to Documentation Changes: Guideline-to-documentation-changes.md
+      - Docker Process: Docker-Process.md
 
   - CreateApplicationProcess:
       - SendApplication:
