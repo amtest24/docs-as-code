@@ -10,50 +10,71 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.details
 nav:
-  - HomePage Test: index.md
-  - Glossary: glossary.md
-  - Test Page: testpage.md
-  - OpenAPI:
-      - Overview: OpenAPI/Overview.md
-      - Services: OpenAPI/Services.md
-      - Schemas: OpenAPI/Schemas.md
-      - Data Model: OpenAPI/DataModel.md
+  - Home: index.md
   - Overview:
       - FAQ: FAQ.md
-      - Glossary: Glossary.md
+      - Glossary: glossary.md
       - Guideline to Documentation Changes: Guideline-to-documentation-changes.md
       - Docker Process: Docker-Process.md
+  - Test Page: testpage.md
 
-  - CreateApplicationProcess:
-      - SendApplication:
+  - OpenAPI:
+      - Services: OpenAPI/Services.md
+      - Application Creation: OpenAPI/ApplicationCreation.md
+      - Client Decision: OpenAPI/ClientDecision.md
+      - Risk: OpenAPI/Risk.md
+      - Status Send: OpenAPI/StatusSend.md
+      - Swagger Test: OpenAPI/testswagger.md
+
+  - Create Application Process:
+      - Send Application:
           - General: CreateApplicationProcess/SendApplication-General.md
           - Use Cases: CreateApplicationProcess/SendApplication-UseCases.md
           - Schemas: CreateApplicationProcess/SendApplication-Schemas.md
           - Data Model: CreateApplicationProcess/SendApplication-DataModel.md
 
-      - ApplicationEntityCreation:
+      - Application Entity Creation:
           - General: CreateApplicationProcess/ApplicationEntityCreation-General.md
           - Use Cases: CreateApplicationProcess/ApplicationEntityCreation-UseCases.md
           - Schemas: CreateApplicationProcess/ApplicationEntityCreation-Schemas.md
           - Data Model: CreateApplicationProcess/ApplicationEntityCreation-DataModel.md
 
-  - Risk-CheckProcess:
-      - Stage DM1: Risk-CheckProcess/DM1/DM1-General.md
-      - OpenAPIServices: OpenAPI/Services.md
+  - Risk Check Process:
+      - DM1:
+          - General: Risk-CheckProcess/DM1/DM1-General.md
+          - Use Cases: Risk-CheckProcess/DM1/DM1-UseCases.md
+          - Schemas: Risk-CheckProcess/DM1/DM1-Schemas.md
+          - Data Model: Risk-CheckProcess/DM1/DM1-DataModel.md
 
-
-  - DecisionProcess:
-      - SendingStatus:
+  - Decision Process:
+      - Sending Status:
           - General: DecisionProcess/SendingStatus-General.md
           - Use Cases: DecisionProcess/SendingStatus-UseCases.md
           - Schemas: DecisionProcess/SendingStatus-Schemas.md
           - Data Model: DecisionProcess/SendingStatus-DataModel.md
 
-      - ReceivingADecision:
+      - Receiving a Decision:
           - General: DecisionProcess/ReceivingADecision-General.md
           - Use Cases: DecisionProcess/ReceivingADecision-UseCases.md
           - Schemas: DecisionProcess/ReceivingADecision-Schemas.md
           - Data Model: DecisionProcess/ReceivingADecision-DataModel.md
 
-      - DecisionToCreditFactory:
-          - General: DecisionProcess/DecisionToCreditF
+      - Decision to Credit Factory:
+          - General: DecisionProcess/DecisionToCreditFactory-General.md
+          - Use Cases: DecisionProcess/DecisionToCreditFactory-UseCases.md
+          - Schemas: DecisionProcess/DecisionToCreditFactory-Schemas.md
+          - Data Model: DecisionProcess/DecisionToCreditFactory-DataModel.md
+
+  - After Decision Process:
+      - Credit Factory Checks:
+          - General: After-DecisionProcess/CreditFactoryChecks-General.md
+          - Use Cases: After-DecisionProcess/CreditFactoryChecks-UseCases.md
+          - Schemas: After-DecisionProcess/CreditFactoryChecks-Schemas.md
+          - Data Model: After-DecisionProcess/CreditFactoryChecks-DataModel.md
+
+      - Funded:
+          - General: After-DecisionProcess/Funded-General.md
+          - Use Cases: After-DecisionProcess/Funded-UseCases.md
+          - Schemas: After-DecisionProcess/Funded-Schemas.md
+          - Data Model: After-DecisionProcess/Funded-DataModel.md
+
