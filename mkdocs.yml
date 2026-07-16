@@ -31,10 +31,9 @@ nav:
           - Use Cases: CreateApplicationProcess/ApplicationEntityCreation-UseCases.md
           - Schemas: CreateApplicationProcess/ApplicationEntityCreation-Schemas.md
           - Data Model: CreateApplicationProcess/ApplicationEntityCreation-DataModel.md
-          - OpenAPItest: OpenAPI/testswagger.md
 
   - Risk-CheckProcess:
-      - Stages DM1–DM7: Risk-CheckProcess/Stages-DM1-DM7.md
+      - Stage DM1: Risk-CheckProcess/DM1/DM1-General.md
       - OpenAPIServices: OpenAPI/Services.md
 
 

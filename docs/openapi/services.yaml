@@ -21,7 +21,7 @@ paths:
     post:
       tags:
         - GKB
-      summary: Create credit history record
+      summary: Notifying goverment body
       operationId: gkbCreateCreditHistory
       requestBody:
         required: true

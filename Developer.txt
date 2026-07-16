@@ -1,0 +1,23 @@
+Developer
+  ↓
+Edit docs/code
+  ↓
+git add / commit / push
+  ↓
+GitHub repository
+  ↓
+GitHub Actions detects push
+  ↓
+Runs workflow from .github/workflows/docker.yml
+  ↓
+Checks out repository code
+  ↓
+Sets up Docker Buildx
+  ↓
+Logs in to Docker Hub using GitHub secrets
+  ↓
+Builds Docker image from Dockerfile
+  ↓
+Pushes image to Docker Hub
+  ↓
+Image available for pull/run later
